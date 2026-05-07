@@ -9,12 +9,12 @@ Welcome to my computer networking portfolio! This repository contains hands-on i
 
 ### 1. [Redundant Enterprise Campus Architecture](./Redundant-Campus-Network/)
 * **Objective:** Eliminate single points of failure in a campus network.
-* **Core Tech:** Three-node L3 Switch "Triangle" Core, RPVST+, LACP EtherChannels, SVIs, DHCP Relay, PortFast, BPDU Guard, Root Guard, and Edge Routing to WAN.
+* **Core Tech:** Three-node L3 Switch "Triangle" Core, RPVST+, LACP EtherChannels, BPDU Guard, Root Guard, and Edge Routing to WAN.
 * **Status:** Complete & Active.
 
-### 2. [Enterprise Multi-Site WAN Architecture](./Multi-Site-WAN/)
-* **Objective:** Establish multi-site enterprise connectivity and department segmentation.
-* **Core Tech:** Router-on-a-Stick (802.1Q Encapsulation), VLSM Address Allocation, Static Routing, and Edge Router Configuration.
+### 2. [Enterprise Multi-Site WAN Architecture](./Enterprise Multi-Site-WAN Architecture/)
+* **Objective:** Establish multi-site connectivity and department segmentation.
+* **Core Tech:** Router-on-a-Stick (802.1Q), VLSM Address Planning, and Static Routing.
 * **Status:** Complete.
 
 ---
