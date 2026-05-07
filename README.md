@@ -12,7 +12,7 @@ Welcome to my computer networking portfolio! This repository contains hands-on i
 * **Core Tech:** Three-node L3 Switch "Triangle" Core, RPVST+, LACP EtherChannels, BPDU Guard, Root Guard, and Edge Routing to WAN.
 * **Status:** Complete & Active.
 
-### 2. [Enterprise Multi-Site WAN Architecture](./Multi-Site-WAN/)
+### 2. [Enterprise Multi-Site WAN Architecture](./Enterprise-Multi-Site-WAN-Architecture/)
 * **Objective:** Establish multi-site connectivity and department segmentation.
 * **Core Tech:** Router-on-a-Stick (802.1Q), VLSM Address Planning, and Static Routing.
 * **Status:** Complete.
