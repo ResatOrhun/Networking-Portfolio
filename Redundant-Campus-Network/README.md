@@ -17,5 +17,5 @@ The implementation was fully verified through the following CLI diagnostics incl
 * **Backbone:** Verified active **Port-Channel (SU)** status for bundled links.
 
 ## 📂 Files
-* `Enterprise Campus Network Architecture & Implementation Documentation.pdf`: Full technical documentation and verification logs.
+* `Technical Project Report.pdf`: Full technical documentation and verification logs.
 * `*.pkt`: Cisco Packet Tracer source file.
