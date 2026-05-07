@@ -20,5 +20,3 @@
 
 ---
 
-> [!IMPORTANT]
-> [cite_start]For a comprehensive architectural breakdown and high-resolution topology diagrams, please refer to the [**combined.pdf**](../combined.pdf) located in the project root .
