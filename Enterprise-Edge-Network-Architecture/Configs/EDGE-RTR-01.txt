@@ -1,1 +1,143 @@
-
+Current configuration : 2754 bytes
+!
+version 15.4
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname EDGE-RTR-01
+!
+!
+!
+enable secret 5 $1$mERr$hx5rVt7rPNoS4wqbXKX7m0
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+no ip domain-lookup
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0/0
+ ip address 10.1.1.2 255.255.255.252
+ ip nat inside
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0/1
+ ip address 10.1.2.2 255.255.255.252
+ ip nat inside
+ duplex auto
+ speed auto
+!
+interface Serial0/1/0
+ ip address 203.0.113.1 255.255.255.252
+ ip nat outside
+!
+interface Serial0/1/1
+ ip address 203.0.113.5 255.255.255.252
+ ip nat outside
+!
+interface GigabitEthernet0/2/0
+ switchport access vlan 200
+ switchport mode access
+!
+interface GigabitEthernet0/2/1
+ switchport mode access
+!
+interface GigabitEthernet0/2/2
+ switchport mode access
+!
+interface GigabitEthernet0/2/3
+ switchport mode access
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan200
+ mac-address 00e0.8fa0.cb01
+ ip address 192.168.200.1 255.255.255.0
+ ip access-group SECURE-DMZ in
+ ip nat inside
+!
+router ospf 1
+ log-adjacency-changes
+ network 10.1.1.0 0.0.0.3 area 0
+ network 10.1.2.0 0.0.0.3 area 0
+ default-information originate
+!
+router bgp 65000
+ bgp log-neighbor-changes
+ no synchronization
+ neighbor 203.0.113.2 remote-as 15169
+ neighbor 203.0.113.6 remote-as 15169
+ network 203.0.113.0 mask 255.255.255.252
+ network 203.0.113.4 mask 255.255.255.252
+!
+ip nat inside source list 1 interface Serial0/1/0 overload
+ip nat inside source list 2 interface Serial0/1/1 overload
+ip nat inside source static tcp 192.168.200.5 80 203.0.113.1 80 
+ip nat inside source static tcp 192.168.200.5 80 203.0.113.5 80 
+ip classless
+ip route 0.0.0.0 0.0.0.0 203.0.113.6 
+ip route 0.0.0.0 0.0.0.0 203.0.113.2 10
+!
+ip flow-export version 9
+!
+!
+access-list 1 permit 192.168.10.0 0.0.0.255
+access-list 1 permit 192.168.20.0 0.0.0.255
+access-list 1 permit 192.168.30.0 0.0.0.255
+access-list 1 permit 192.168.99.0 0.0.0.255
+access-list 1 permit 192.168.100.0 0.0.0.255
+access-list 1 permit 192.168.200.0 0.0.0.255
+access-list 2 permit 192.168.10.0 0.0.0.255
+access-list 2 permit 192.168.20.0 0.0.0.255
+access-list 2 permit 192.168.30.0 0.0.0.255
+access-list 2 permit 192.168.99.0 0.0.0.255
+access-list 2 permit 192.168.100.0 0.0.0.255
+access-list 2 permit 192.168.200.0 0.0.0.255
+ip access-list extended SECURE-DMZ
+ permit tcp 192.168.200.0 0.0.0.255 192.168.10.0 0.0.0.255 established
+ deny ip 192.168.200.0 0.0.0.255 192.168.10.0 0.0.0.255
+ deny ip 192.168.200.0 0.0.0.255 192.168.20.0 0.0.0.255
+ permit ip 192.168.200.0 0.0.0.255 any
+!
+!
+!
+!
+!
+line con 0
+ password cisco
+ login
+!
+line aux 0
+!
+line vty 0 4
+ password cisco
+ login
+!
+!
+!
+end
