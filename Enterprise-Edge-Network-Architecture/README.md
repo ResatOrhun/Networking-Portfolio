@@ -53,7 +53,7 @@ Running `show ip access-lists SECURE-DMZ` demonstrates the precision of the acti
 ### 🌐 Edge Translation Validation (Static NAT)
 An external testing node (`Customer / Hacker PC`) successfully accesses the hidden internal DMZ web assets via the public IP address endpoint, validating the active port-forwarding state.
 
-![Static NAT Browser Success](./Images/Public_Web_Access_NAT_.png)
+![Static NAT Browser Success](./Images/Public_Web_Access_NAT.png)
 
 ---
 
