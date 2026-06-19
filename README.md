@@ -17,7 +17,7 @@ Welcome to my computer networking portfolio! This repository contains hands-on i
 * **Core Tech:** External BGP (eBGP) Peering, Multi-Area OSPF Integration & Route Injection, Floating Static Routes, Port Address Translation (PAT Overload), Static NAT Port Forwarding, and Stateful-Mimicking Extended ACLs using `established` TCP flag matching.
 * **Status:** Complete & Active.
 
-### 2. [Enterprise Multi-Site WAN Architecture](./Enterprise-Multi-Site-WAN-Architecture/)
+### 3. [Static WAN & Inter-VLAN Routing](./Static-WAN-InterVLAN-Routing/)
 * **Objective:** Establish multi-site connectivity and department segmentation.
 * **Core Tech:** Router-on-a-Stick (802.1Q), VLSM Address Planning, and Static Routing.
 * **Status:** Complete.
