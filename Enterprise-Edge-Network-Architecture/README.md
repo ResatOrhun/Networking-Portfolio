@@ -43,17 +43,17 @@ The public-facing Web Server lives in an isolated boundary segment (**VLAN 200 -
 ### ☁️ Edge BGP Peering Verification
 Running `show ip bgp summary` verifies stable, active peering with both upstream ISPs (`AS 15169`). The numerical value in the state column confirms the neighborhood state is **Established**.
 
-![BGP Summary](./images/BGP.png)
+![BGP Summary](./Images/BGP.png)
 
 ### 🧱 Real-Time Security ACL Match Metrics
 Running `show ip access-lists SECURE-DMZ` demonstrates the precision of the active containment policy. The tracking engine registers exact matches on drops when lateral movement is attempted, alongside permitted traffic for external system update patches.
 
-![ACL Match Metrics](./images/SECURE-DMZ.png)
+![ACL Match Metrics](./Images/SECURE-DMZ.png)
 
 ### 🌐 Edge Translation Validation (Static NAT)
 An external testing node (`Customer / Hacker PC`) successfully accesses the hidden internal DMZ web assets via the public IP address endpoint, validating the active port-forwarding state.
 
-![Static NAT Browser Success](./images/Public_Web_Access_NAT.png)
+![Static NAT Browser Success](./Images/Public_Web_Access_NAT.png)
 
 ---
 
