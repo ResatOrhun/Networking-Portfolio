@@ -7,7 +7,7 @@ This repository contains a fully converged, high-availability enterprise campus 
 ## 🗺️ Network Topology Overview
 Below is the architectural layout of the corporate campus network, featuring a redundant multilayer core, structured user access layers, an isolated server farm, and a public-facing Demilitarized Zone (DMZ).
 
-![Network Topology](./images/Project.png)
+![Network Topology](./Images/Project.png)
 
 ---
 
