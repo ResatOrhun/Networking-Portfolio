@@ -11,13 +11,13 @@ By leveraging **Python** and **Netmiko**, this framework orchestrates the provis
 ![Network Topology](Project.png)
 
 ## Core Objectives
-* **WAN Scaling:** Automating the implementation of OSPF routing protocols across point-to-point `/30` transit links.
-* **Service Provisioning:** Dynamically deploying VLANs, SVIs, and security policies.
-* **Consistency:** Eliminating manual CLI errors through Infrastructure-as-Code (IaC) principles.
-* **Modular Orchestration:** Utilizing a dependency-aware framework to ensure the "Underlay" (routing) is built before the "Overlay" (services).
+* **Out-of-Band (OOB) Management:** The framework utilizes a dedicated, air-gapped management network (via an unmanaged switch topology) to ensure automation scripts can provision devices independently of the data-plane routing state.
+* **Modular Orchestration:** Utilizing a dependency-aware execution engine (`provision.py`) to ensure the "Underlay" (routing) is fully converged before the "Overlay" (services) is applied.
+* **Infrastructure as Code (IaC):** Device inventories and parameters are decoupled from the execution logic using YAML configurations.
 
 ## Project Roadmap
 - [x] Initial design and topology definition.
+- [x] Out-of-Band management plane configuration.
 - [x] Basic Netmiko connection framework development.
 - [ ] OSPF Underlay automation logic.
 - [ ] VLAN/SVI Overlay deployment.
@@ -26,8 +26,8 @@ By leveraging **Python** and **Netmiko**, this framework orchestrates the provis
 ## Technical Stack
 * **Language:** Python
 * **Automation Library:** Netmiko
-* **Data Formatting:** YAML (for device inventory management)
-* **Environment:** GNS3 / EVE-NG Simulation
+* **Data Formatting:** YAML 
+* **Environment:** Cisco Modeling Labs (CML) via Cisco DevNet
 
 ---
 *Developed as part of an advanced networking infrastructure study.*
