@@ -8,8 +8,8 @@ Welcome to my computer networking portfolio! This repository contains hands-on i
 
 
 ## 📄 Key Documents Included
-* 💼 **[My CV (ResatOrhun_CV.pdf)](./ResatOrhun_CV.pdf):** Technical resume outlining my BSc at Politecnico di Torino and professional ambitions.
-* **[Motivation Letter](./Polimi_Motivation_Letter.pdf)**
+* **[My CV (ResatOrhun_CV.pdf)](./ResatOrhun_CV.pdf)** 
+* **[Motivation Letter](./Resat_Orhun_Motivation_Letter.pdf)**
 * **[LinkedIn](https://linkedin.com/in/resatorhunkonak)**
 
 
