@@ -11,7 +11,7 @@ Welcome to my computer networking portfolio! This repository contains hands-on i
 * **[My CV (ResatOrhun_CV.pdf)](./ResatOrhun_CV.pdf)** 
 * **[Motivation Letter](./Resat%20Orhun%20Motivation%20Letter.pdf)**
 * **[LinkedIn](https://linkedin.com/in/resatorhunkonak)**
-* **[Personal_Website](https://resatorhun.github.io/personal-portfolio-webpage/)**
+* **[Personal Website](https://resatorhun.github.io/personal-portfolio-webpage/)**
 
 
 ---
