@@ -3,6 +3,16 @@
 
 Welcome to my computer networking portfolio! This repository contains hands-on implementations that bridge theoretical knowledge of communication systems with industry-standard network architecture.
 
+
+---
+
+
+## 📄 Key Documents Included
+* 💼 **[My CV (ResatOrhun_CV.pdf)](./ResatOrhun_CV.pdf):** Technical resume outlining my BSc at Politecnico di Torino and professional ambitions.
+* **[Motivation Letter](./Polimi_Motivation_Letter.pdf)**
+* **[LinkedIn](https://linkedin.com/in/resatorhunkonak)**
+
+
 ---
 
 ## 🏛️ Projects Inside
@@ -24,10 +34,6 @@ Welcome to my computer networking portfolio! This repository contains hands-on i
 
 ---
 
-## 📄 Key Documents Included
-* 💼 **[My CV (ResatOrhun_CV.pdf)](./ResatOrhun_CV.pdf):** One-page technical resume outlining my BSc at Politecnico di Torino and professional ambitions.
-
----
 
 ## 🛠️ How to Test the Designs
 1. Clone this repository to your local development workspace.
